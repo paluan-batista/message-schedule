@@ -50,7 +50,7 @@ public class SwaggerConfig {
     }
 
     private Predicate<RequestHandler> apis() {
-        return RequestHandlerSelectors.basePackage("br.com.schedule");
+        return RequestHandlerSelectors.basePackage("br.com.message.schedule");
     }
 
     private ApiInfo apiInfo() {
