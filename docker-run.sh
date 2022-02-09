@@ -1,0 +1,1 @@
+mvn clean install -DskipTests -Pprod && docker build -t paluanbatista/message-schedule . && docker-compose up
