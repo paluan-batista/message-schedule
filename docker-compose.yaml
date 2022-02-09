@@ -16,7 +16,7 @@ services:
       - POSTGRES_USER=postgres
       - POSTGRES_DB=message-schedule
     restart: unless-stopped
-  schedule:
+  message-schedule:
     image: paluanbatista/message-schedule
     network_mode: bridge
     container_name: message-schedule
