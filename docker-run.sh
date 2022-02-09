@@ -1,1 +1,1 @@
-mvn clean install -DskipTests -Pprod && docker build -t paluanbatista/message-schedule . && docker-compose up
+mvn clean install -DskipTests -Pcontainer && docker build -t paluanbatista/message-schedule . && docker-compose up
