@@ -3,5 +3,5 @@ VOLUME /tmp
 EXPOSE 8080
 RUN mkdir -p /app/
 RUN mkdir -p /app/logs/
-ADD target/message-schedule-1.0.0.jar /app/message-schedule.jar
-ENTRYPOINT ["java","-Djava.security.egd=file:/dev/./urandom","-Dspring.profiles.active=container", "-jar", "/app/message-schedule.jar"]
+ADD target/message.schedule-0.0.1-SNAPSHOT.jar /app/message.schedule.jar
+ENTRYPOINT ["java","-Djava.security.egd=file:/dev/./urandom","-Dspring.profiles.active=container", "-jar", "/app/message.schedule.jar"]

@@ -14,7 +14,7 @@ services:
       - POSTGRES_PASSWORD=postgres
       - POSTGRES_IP_ADDRESS=172.17.0.2
       - POSTGRES_USER=postgres
-      - POSTGRES_DB=schedule_labs
+      - POSTGRES_DB=message-schedule
     restart: unless-stopped
   schedule:
     image: paluanbatista/message-schedule
