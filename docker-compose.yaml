@@ -19,7 +19,7 @@ services:
   schedule:
     image: paluanbatista/message-schedule
     network_mode: bridge
-    container_name: schedule
+    container_name: message-schedule
     expose:
       - 8080
     ports:
